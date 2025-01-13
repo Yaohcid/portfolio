@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yao Bao UX Portfolio</title>
+    <meta name="description" content="Yao Bao Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="projectstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel='icon' href="img/favicon.ico" type='image/x-icon'/>
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<style>
+    .more{
+        font-size: 18px;
+        line-height: 24px;
+        color: #414549;
+        text-align: left;
+        color: #969696;
+        background-color: #f1f3f4;
+        padding: 15px 50px 15px 50px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+}
+    .pwfield{
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .pwBtn{
+        font-size: 16px;
+        margin-top: 15px;
+        width: 200px;
+        height: 30px;
+        background-color: #4285f4;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        display:inline-block;
+    }
+
+</style>
+<body>
+    
+    <!--Scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> </button>
+    
+    <div class="projectwrapper">
+           
+        <!--Logo and Banner-->
+        <div class="top-container">
+            <div class="home-button">
+                <a class="logo" href="index.html"></a>
+            </div>
+            <img class="banner-img" alt="Project Banner Image" src="img/Watermark/Cover-Planning.png">
+        </div>
+        
+        <!--Content Container-->
+        <div class="content-container">
+            
+            <!--Scrollspy-->
+            <div class="scrollspy" id="mySpy">
+                <nav>
+                    <ul>
+                        <li> <a href='#section1'>Background</a> </li>
+                        <li> <a href='#section2'>More</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!--Content-->
+            <div class="content">
+                
+                <!--Plan Title-->
+                <h1>Planning</h1>
+                <h2>Watermark (Previous Tk20 Inc. before its merger)</h2>
+                <div class="projectTag">May 2016 - Present | Lead Interaction Designer | Web App</div>
+                <p></p>
+                <article>
+                    <section>
+                        <header>
+                            <h3 id='section1'>Background</h3> </header>
+                        <h4>What we are doing</h4>
+                        <p>With the merger and rebranding of our new company, we are working on the new generation of assessment and accreditation platform for high education institutions. </p>
+                        <img class="content-img" alt="Planning" src="img/Watermark/Planning.png">
+                        <div class="img-caption">Academic Planning</div>
+                        <h4>Who we are designing for</h4>
+                        <img class="content-img" alt="Planning Role" src="img/Watermark/PlanningRole.png">
+                        <div class="img-caption">Planning Role</div>
+                        <p>Universities and colleges usually have a multi-level organization hierachy. Assessment Coordinator or Unit Administrator in an institution is usaually the creator of assessment plans.</p>
+                        <p>Each level has their goals and objectives. Assessment Leads are the contact people for each organization. They are responsible for entering the objectives assessment results during each assessment period. These assessment results can be rolled over to support higher level organization's objective assessment. </p>
+                        <p>In each program, faculty members work as assessment contributors, to score students' assignments, work, performance and provide these data to their Assessment Lead.</p>
+                        <h4>When and How</h4>
+                        <img class="content-img" alt="Planning Timeline" src="img/Watermark/Timeline.png">
+                        <div class="img-caption">Planning Timeline</div>
+                        <p>We are working on a platform that makes the data collection and assessment collaboration easier and more efficient. We also aim to encourage a better assessment culture. Our product is still under development. Feel free to contact me in person to see the new workflow, wireframes, prototypes, and more.</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section2'>More</h3> </header>
+                        <div class="more"> 
+                            <p>Please enter the password to read more:</p>
+                            <input class="pwfield" id='password' type='text' /> 
+                            <a href="img/Watermark/PlanningDoc.pdf" onclick="javascript:return validatePass()" target="_blank"> <p class="pwBtn">Full Project Document</p></a>
+                        </div>
+                        
+                    </section>
+
+                </article>
+            </div>
+        </div>
+        <footer>
+            <p>© Design and Code by Yao Bao 2017-2018</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            var sections = document.querySelectorAll('article [id]');
+            var navLinks = document.querySelectorAll('nav ul li a');
+
+            function getClosestSection() {
+                var sectionsLength = sections.length;
+                for (var index = 0; index < sectionsLength; index++) {
+                    if (isBelowScroll(sections.item(index))) break;
+                }
+                selectLink(sections.item(index).id)
+            }
+
+            function isBelowScroll(element) {
+                var position = element.getBoundingClientRect();
+                return (position.top > 0 && position.top < window.innerHeight);
+            }
+
+            function selectLink(id) {
+                Array.prototype.forEach.call(navLinks, function (element) {
+                    element.classList.remove('is-selected');
+                });
+                document.querySelector('a[href="#' + id + '"]').classList.add('is-selected');
+            }
+            window.addEventListener('scroll', function (event) {
+                getClosestSection();
+            });
+        })();
+    </script>
+    <script>
+        window.onscroll = function () {
+            myFunction();
+            scrollFunction()
+        };
+        var scrollspy = document.getElementById("mySpy");
+        var sticky = scrollspy.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky - 60) {
+                scrollspy.classList.add("sticky");
+            }
+            else {
+                scrollspy.classList.remove("sticky");
+            }
+        }
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            $('html, body').animate({
+            scrollTop: 0
+            }, 800);
+        }
+    </script>
+    <script>
+        function validatePass() {
+            if (document.getElementById('password').value == 'd3s1gner') {
+                return true;
+            }
+            else {
+                alert('wrong password!!');
+                return false;
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

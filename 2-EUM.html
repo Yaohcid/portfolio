@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yao Bao UX Portfolio</title>
+    <meta name="description" content="Yao Bao Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="projectstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<style>
+    .scroll-down {
+      opacity: 1;
+      -webkit-transition: all .5s ease-in 3s;
+      transition: all .5s ease-in 3s;
+    }
+
+    .scroll-down {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      margin-left: -16px;
+      display: block;
+      width: 32px;
+      height: 32px;
+      border: 2px solid #424242;
+      background-size: 14px auto;
+      border-radius: 50%;
+      z-index: 2;
+      -webkit-animation: bounce 2s infinite 2s;
+      animation: bounce 2s infinite 2s;
+      -webkit-transition: all .2s ease-in;
+      transition: all .2s ease-in;
+      transform: scale(1)
+    }
+
+    .scroll-down:before {
+        position: absolute;
+        top: calc(50% - 8px);
+        left: calc(50% - 6px);
+        transform: rotate(-45deg);
+        display: block;
+        width: 12px;
+        height: 12px;
+        content: "";
+        border: 2px solid #424242;
+        border-width: 0px 0 2px 2px;
+    }
+
+    @keyframes bounce {
+      0%,
+      100%,
+      20%,
+      50%,
+      80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+      60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+      }
+    }
+</style>
+
+<body>
+    
+    <!--Scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> </button>
+    
+    <div class="projectwrapper">
+           
+        <!--Logo and Banner-->
+        <div class="top-container">
+            <div class="home-button">
+                <a class="logo" href="index.html"></a>
+            </div>
+            <img class="banner-img" alt="Project Banner Image" src="img/project_placeholder.png">
+            <a href="#" class="scroll-down" address="true"></a>
+        </div>
+        
+        <!--Content Container-->
+        <div class="content-container">
+            
+            <!--Scrollspy-->
+            <div class="scrollspy" id="mySpy">
+                <nav>
+                    <ul>
+                        <li> <a href='#section1'>Section 1</a> </li>
+                        <li> <a href='#section2'>Section 2</a> </li>
+                        <li> <a href='#section3'>Section 3</a> </li>
+                        <li> <a href='#section4'>Section 4</a> </li>
+                        <li> <a href='#section5'>Section 5</a> </li>
+                        <li> <a href='#section6'>Section 6</a> </li>
+                        <li> <a href='#section7'>Section 7</a> </li>
+                        <li> <a href='#section8'>Section 8</a> </li>
+                        <li> <a href='#section9'>Section 9</a> </li>
+                        <li> <a href='#section10'>Section 10</a> </li>
+                        <li> <a href='#section11'>Section 11</a> </li>
+                        <li> <a href='#section12'>Section 12</a> </li>
+                        <li> <a href='#section13'>Section 13</a> </li>
+                        <li> <a href='#section14'>Section 14</a> </li>
+                        <li> <a href='#section15'>Section 15</a> </li>
+                        <li> <a href='#section16'>Section 16</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!--Content-->
+            <div class="content">
+                
+                <!--Plan Title-->
+                <h1>Hello World</h1>
+                <h2>Welcome to this world</h2>
+                <p>I am the world itself.</p>
+                <div class="projectTag">October 2015 - Feburary 2016 | Experience Designer |</div>
+                <article>
+                    <section>
+                        <header>
+                            <h3 id='section1'>Section 1</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                       
+                        
+                        
+                        
+                    </section>
+                    <section class="ok">
+                        <header>
+                            <h3 id='section2'>Section 2</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section3'>Section 3</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section4'>Section 4</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section5'>Section 5</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section6'>Section 6</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section7'>Section 7</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section8'>Section 8</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section9'>Section 9</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section10'>Section 10</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section11'>Section 11</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section12'>Section 12</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section13'>Section 13</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section14'>Section 14</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section15'>Section 15</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section16'>Section 16</h3> </header>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eius tenetur praesentium, rerum quis. Vitae in ipsa, cum saepe obcaecati inventore suscipit? Molestiae hic quisquam quos est tempora obcaecati id!</p>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <footer>
+            <p>© Design and Code by Yao Bao 2017-2018</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            var sections = document.querySelectorAll('article [id]');
+            var navLinks = document.querySelectorAll('nav ul li a');
+
+            function getClosestSection() {
+                var sectionsLength = sections.length;
+                for (var index = 0; index < sectionsLength; index++) {
+                    if (isBelowScroll(sections.item(index))) break;
+                }
+                selectLink(sections.item(index).id)
+            }
+
+            function isBelowScroll(element) {
+                var position = element.getBoundingClientRect();
+                return ((position.top > 0 && position.top < window.innerHeight) || (position.bottom > 0 && position.bottom  < window.innerHeight));
+            }
+
+            function selectLink(id) {
+                Array.prototype.forEach.call(navLinks, function (element) {
+                    element.classList.remove('is-selected');
+                });
+                document.querySelector('a[href="#' + id + '"]').classList.add('is-selected');
+            }
+            window.addEventListener('scroll', function (event) {
+                getClosestSection();
+            });
+        })();
+    </script>
+    <script>
+        window.onscroll = function () {
+            myFunction();
+            scrollFunction()
+        };
+        var scrollspy = document.getElementById("mySpy");
+        var sticky = scrollspy.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky - 60) {
+                scrollspy.classList.add("sticky");
+            }
+            else {
+                scrollspy.classList.remove("sticky");
+            }
+        }
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            $('html, body').animate({
+            scrollTop: 0
+            }, 800);
+        }
+    </script>
+    <script>
+        $(function() {
+        $('.scroll-down').click (function() {
+        $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+        return false;
+        });
+        });
+    </script>
+    
+</body>
+
+</html>

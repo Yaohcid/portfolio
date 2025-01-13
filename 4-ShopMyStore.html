@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yao Bao UX Portfolio</title>
+    <meta name="description" content="Yao Bao Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="projectstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel='icon' href="img/favicon.ico" type='image/x-icon'/>
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    
+    <!--Scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> </button>
+    
+    <div class="projectwrapper">
+           
+        <!--Logo and Banner-->
+        <div class="top-container">
+            <div class="home-button">
+                <a class="logo" href="index.html"></a>
+            </div>
+            <img class="banner-img" alt="Project Banner Image" src="img/Kohls-Shop-My-Store/Cover-ShopMyStore.png">
+        </div>
+        
+        <!--Content Container-->
+        <div class="content-container">
+            
+            <!--Scrollspy-->
+            <div class="scrollspy" id="mySpy">
+                <nav>
+                    <ul>
+                        <li> <a href='#section1'>Challenge</a> </li>
+                        <li> <a href='#section2'>Research</a> </li>
+                        <li> <a href='#section3'>Insights</a> </li>
+                        <li> <a href='#section4'>Brainstorm</a> </li>
+                        <li> <a href='#section5'>Constraints</a> </li>
+                        <li> <a href='#section6'>Concept</a> </li>
+                        <li> <a href='#section7'>Improvement</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!--Content-->
+            <div class="content">
+                
+                <!--Plan Title-->
+                <h1>Shop My Store</h1>
+                <h2>Shop online as you were at a Kohl's store</h2>
+                <div class="projectTag">October 2015 - Feburary 2016 | Experience Designer | Omni-channel</div>
+                <p>From October 2015, I started dedicatedly working on Buy Online Pick Up in Store (BOPUS) program across mobile, tablet, desktop platforms and in-store experience at Kohl's. That was only about 4 months after Kohl's launched BOPUS options to customers. It's very convenient for customers who shop online and want to get the merchandise without waiting or paying for delivery. However, the BOPUS option was hidden deep in the user flow and easily ignored. </p>
+                <article>
+                    <section>
+                        <header><h3 id='section1'>Challenge</h3> </header>
+                        <p>At that time, the challenge for BOPUS at Kohl's is to increase its visibility through user interactions, bring earlier BOPUS awareness in a more intuitive online shopping experience.</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section2'>Research</h3>
+                        </header>
+                        <h4>1. Previous Design Evaluation</h4>
+                        <a href="img/Kohls-Shop-My-Store/Omni-Channel-BOPUS.png" target="_blank">
+                            <img class="content-img" alt="Omni-channel-BOPUS" src="img/Kohls-Shop-My-Store/Omni-Channel-BOPUS.png">
+                        </a>
+                        <div class="img-caption">Previous BOPUS omni-channel work flows</div>
+                        
+                        <p>This is a map of the previous best practice work flows of how a user places a BOPUS order on different platforms. Compare to a regular online order, user has to apply a specific filter to find a BOPUS eligible merchandise. Sometimes even if the user finds one, it might not be in stock in the store loction expected. This user flow is especially complicated on mobile platform because the filter is too hidden.</p>
+                        <img class="content-img" alt="Screenshot Desktop Filter" src="img/Kohls-Shop-My-Store/BOPUS-previous-detail.png">
+                        <div class="img-caption">BOPUS filter on Kohl's search result page</div>
+                        <img class="content-img" alt="Screenshot Desktop Filter" src="img/Kohls-Shop-My-Store/BOPUS-previous-detail2.png">
+                        <div class="img-caption">BOPUS option and store selector on a product page</div>
+                        <p>Because of the limited space on mobile platform, the filters are not displayed directedly. Applying a BOPUS filter would usually take a user at least 4 taps. </p>
+                        <img class="content-img" alt="Screenshot Mobile Filter" src="img/Kohls-Shop-My-Store/PreviousMobile.png">
+                        <div class="img-caption">BOPUS filter on Kohl's native app</div>
+                        <h4>2. Usability Test of Previous BOPUS Experience</h4>
+                        <p>We have dedicated research team worked on the usability test of previous BOPUS workflow. However, I also went to Kohl's stores and grab random customers to do usability tests to get some first hand data. Some finds related to BOPUS are:</p>
+                        <ul>
+                            <li>The top reason given for usage of the Pick Up in Store filter was preferring to avoid shipping costs and the wait for a shipment delivery.</li>
+                            <li>Other noted benefits of picking up in store included being able to see and touch the product before bringing it home and ease of return.</li>
+                            <li>15% of those who indicated they used filters in general used the Pick Up in Store filter. </li>
+                        </ul>
+                        <p>Customer feedback highlights:</p>
+                        <div class="quote">
+                            <p>"I wanted to have the item for store pick up.  Was told the item was unavailable.  Upon switching to delivery to my home it was available.  $8.95 for delivery. Seriously rethinking my love of Kohl's"</p>
+                            <p>"With the advertising for being able to pick up in store, it would be nice to actually find something that is available to pick up. I have not been able to find one item that is available to pick up at store. I wanted to use my Kohl's cash without having to get to the store. Unsuccessful, $10 in the trash."</p></div>
+                        <h4>3. Competitive Analysis</h4>
+                        <p>Our retailer competitors also have similar "Pick up in store" filter. We found a few of them started implementing a preferred store location as a filter option. This inspired me to explore further on this design opportunity.</p>
+                        <img class="content-img" alt="Competitive Analysis" src="img/Kohls-Shop-My-Store/Competitive2.png">
+                        <div class="img-caption">Competitive Analysis on BOPUS filter</div>
+                        <p>A summary chart for the compatitive analysis</p>
+                        <img class="content-img" alt="Competitive Analysis" src="img/Kohls-Shop-My-Store/Competitive1.png">
+                        <div class="img-caption">Compatitive Analysis Chart on Major Retailers BOPUS</div>
+                        <h4>Research Takeaway</h4>
+                        <p>One key problem we found that affects BOPUS online shopping experience is <b>INVENTORY VISIBILITY</b> when searching for target items. It happens that merchadise could be in stock in some stores but out of stock in some other stores. Using the “Pick up in store” filter doesn’t assure the product is available at the store customer wants to go. The user either need to find another store to pick up, or give up the merchandise and choose another item.</p>
+                        <img class="content-img" alt="Bad Experience" src="img/Kohls-Shop-My-Store/BadPractice.png">
+                        <div class="img-caption">User experience when target item is not available at preferred store location</div>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section3'>Insights</h3>
+                        </header>
+                        <p>Based on the research, some design opportunies were identified.</p>
+                        <ul>
+                            <li>Noticing BOPUS as an option on the site while searching or browsing for a product can lead to a decision to use BOPUS.</li>
+                            <li>A desire to save time and costs paired with the pre-existing knowledge that there’s a Kohl’s store nearby leads to a decision to use BOPUS before exploring the Kohl’s site... as long as there is an awareness of or expectation of the availability of BOPUS.</li>
+                            <li>There are other noted value-adds that would require a separate In-Store filter:  checking whether merchandise available in nearby stores, researching a planned in-store purchase in advance.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section4'>Brainstorm</h3>
+                        </header>
+                        <p>BOPUS awareness can be brought as early as when user searches target items. Either a BOPUS search query or BOPUS toggle can help user see the inventory in user's prefered store.</p>
+                        <img class="content-img" alt="Brainstorm Design" src="img/Kohls-Shop-My-Store/brainstormDesktop.png">
+                        <div class="img-caption">BOPUS Intergrated Search Exploration on Web</div>
+                        <img class="content-img" alt="Brainstorm Design" src="img/Kohls-Shop-My-Store/brainstormMobile.png">
+                        <div class="img-caption">BOPUS Intergrated Search Exploration on Mobile</div>
+                        <p>Store Filters also provide users with the inventory visibility of nearby stores. It assures users what they see will be in stock in store and available for pickup on the same day. </p>
+                        <img class="content-img" alt="Brainstorm Design" src="img/Kohls-Shop-My-Store/brainstormFilter">
+                        <div class="img-caption">BOPUS Store Filter on Search Result Page</div>
+                        
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section5'>Constraints</h3>
+                        </header>
+                        <p>There are many design variations and iterations around the concepts of integrated search and store filters. I did test with customers in store. Most feedback are positive. However, when it comes to a releasible design delivery, there are many constraints implementing the "ideal design". For example: </p>
+                        <ul>
+                            <li>Integrated search on Web was conflicting with another project we were doing.</li>
+                            <li>Store filter on the search result page has page performance issues that current technology could not solve. So I have to reduce the stores displayed by default.</li>
+                            <li>Big changes on the page layout to fit new design elements is not doable, because it will trigger redesign of a lot more elements. Thus I got too limited space to "dream bigger". </li>
+                        </ul>
+                        <p>So, some ideas were moved into backlog. Some ideas need to compromise. However, design is never wasted. When the business value is big enough to initiate bigger redesign, or when we have less technology constraints, a better user experience will be delivered to our customers.</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section6'>Concept</h3>
+                        </header>
+                        <p>We believe the Store Filter will help users find their BOPUS eligible products more easily omni-channel</p>
+                        <h4>Desktop Web Store</h4>
+                        <p>At Kohls.com, a preferred store is set either by the user or geo-located based on user location. We call it "My Store". By selecting "Pick Up in Store" filter, it will automatically select the preferred store to filter down search results. User can also load more nearby stores to see more product options.</p>
+                        <p>Store Filter is special enough to be displayed on top of other filters.</p>
+                        <img class="content-img-shadow" alt="Deliverable Desktop" src="img/Kohls-Shop-My-Store/StoreFilter.png">
+                        <div class="img-caption">Store Filter Desktop Web</div>
+                        <img class="content-img" alt="Deliverable Desktop Filter" src="img/Kohls-Shop-My-Store/FilterDetails.png">
+                        <div class="img-caption">Store Filter Interaction Details</div>
+                        <h4>Tablet Web Store</h4>
+                        <p>Kohl's web store is taking an adaptive approach to fit different device sizes. All filters on Kohl's tablet web store are grouped into a FILTER button. We believe the store filter deserves its own button that user can easily see and use. </p>
+                        <img class="content-img" alt="Deliverable Tablet" src="img/Kohls-Shop-My-Store/FilterTcom.png">
+                        <div class="img-caption">Store Filter Tablet Web</div>
+                        <h4>Mobile Native App</h4>
+                        <p>Mobile Phone platform has smaller space that can fit a list of store filters. A toggle switch is used to easily filter the search results by preferred store inventory.</p>
+                        <img class="content-img" alt="Deliverable Mobile" src="img/Kohls-Shop-My-Store/FilterMobile.png">
+                        <div class="img-caption">Store Filter Mobile Native App</div>
+                        
+                        
+                        <p>Mobile platform has smaller space that can fit a list of store filters. A toggle switch is used to easily filter the search results by preferred store inventory.</p>
+                        
+                    </section>
+                    <section>
+                        <header>
+                            <h3 id='section7'>Improvement</h3>
+                        </header>
+                        <p>With store filters. new flow is more linear when user searches BOPUS eligible products.</p>
+                        <img class="content-img" alt="Deliverable Tablet" src="img/Kohls-Shop-My-Store/NewFLow.png">
+                        <div class="img-caption">New user flow</div>
+                        
+                        <p>The store filter was realised shortly after I left the company. Mobile Shop-My-Store toggle was realised a bit later. There has been a great increase on BOPUS orders. BOPUS orders are now 15% of Kohl's total sales.</p>
+                    </section>
+                    
+                    
+                </article>
+            </div>
+        </div>
+        <footer>
+            <p>© Design and Code by Yao Bao 2017-2018</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            var sections = document.querySelectorAll('article [id]');
+            var navLinks = document.querySelectorAll('nav ul li a');
+
+            function getClosestSection() {
+                var sectionsLength = sections.length;
+                for (var index = 0; index < sectionsLength; index++) {
+                    if (isBelowScroll(sections.item(index))) break;
+                }
+                selectLink(sections.item(index).id)
+            }
+
+            function isBelowScroll(element) {
+                var position = element.getBoundingClientRect();
+                return (position.top > 0 && position.top < window.innerHeight);
+            }
+
+            function selectLink(id) {
+                Array.prototype.forEach.call(navLinks, function (element) {
+                    element.classList.remove('is-selected');
+                });
+                document.querySelector('a[href="#' + id + '"]').classList.add('is-selected');
+            }
+            window.addEventListener('scroll', function (event) {
+                getClosestSection();
+            });
+        })();
+    </script>
+    <script>
+        window.onscroll = function () {
+            myFunction();
+            scrollFunction()
+        };
+        var scrollspy = document.getElementById("mySpy");
+        var sticky = scrollspy.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky - 60) {
+                scrollspy.classList.add("sticky");
+            }
+            else {
+                scrollspy.classList.remove("sticky");
+            }
+        }
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            $('html, body').animate({
+            scrollTop: 0
+            }, 800);
+        }
+    </script>
+    
+</body>
+
+</html>

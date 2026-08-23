@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="projectstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel='icon' href="img/favicon.ico" type='image/x-icon'/>
     <script src="jquery-3.2.1.min.js"></script>
 </head>
@@ -36,13 +37,11 @@
             <div class="scrollspy" id="mySpy">
                 <nav>
                     <ul>
-                        <li> <a href='#section1'>Challenge</a> </li>
-                        <li> <a href='#section2'>Research</a> </li>
-                        <li> <a href='#section3'>Insights</a> </li>
-                        <li> <a href='#section4'>Brainstorm</a> </li>
-                        <li> <a href='#section5'>Constraints</a> </li>
-                        <li> <a href='#section6'>Concept</a> </li>
-                        <li> <a href='#section7'>Improvement</a> </li>
+                        <li> <a href='#section1'>Summary</a> </li>
+                        <li> <a href='#section2'>Strategy</a> </li>
+                        <li> <a href='#section3'>Journey</a> </li>
+                        <li> <a href='#section6'>Solution</a> </li>
+                        <li> <a href='#section7'>Impact</a> </li>
                     </ul>
                 </nav>
             </div>
@@ -54,15 +53,20 @@
                 <h1>Shop My Store</h1>
                 <h2>Shop online as you were at a Kohl's store</h2>
                 <div class="projectTag">October 2015 - Feburary 2016 | Experience Designer | Omni-channel</div>
-                <p>From October 2015, I started dedicatedly working on Buy Online Pick Up in Store (BOPUS) program across mobile, tablet, desktop platforms and in-store experience at Kohl's. That was only about 4 months after Kohl's launched BOPUS options to customers. It's very convenient for customers who shop online and want to get the merchandise without waiting or paying for delivery. However, the BOPUS option was hidden deep in the user flow and easily ignored. </p>
+                <div class="executive-summary">
+                    <h3 id='section1'>Executive summary</h3>
+                    <p>I helped make Kohl’s Buy Online, Pick Up in Store (BOPUS) promise visible at the moment customers were shopping—not after they had already missed it. The resulting “My Store” model connected preferred-store inventory to discovery across desktop, tablet, and mobile.</p>
+                </div>
                 <article>
                     <section>
-                        <header><h3 id='section1'>Challenge</h3> </header>
-                        <p>At that time, the challenge for BOPUS at Kohl's is to increase its visibility through user interactions, bring earlier BOPUS awareness in a more intuitive online shopping experience.</p>
+                        <header><h3>The challenge</h3> </header>
+                        <p>BOPUS had meaningful customer value—speed and no delivery fee—but it was hidden deep in the shopping flow. More critically, a generic pickup filter did not answer the customer’s real question: <strong>is this item available at the store I intend to visit?</strong></p>
+                        <h3>My role &amp; strategic contribution</h3>
+                        <p>I worked across mobile, tablet, desktop, and in-store BOPUS touchpoints. My contribution was to turn scattered inventory controls into a coherent preferred-store strategy, grounded in firsthand customer research and feasible platform constraints.</p>
                     </section>
                     <section>
                         <header>
-                            <h3 id='section2'>Research</h3>
+                            <h3 id='section2'>Reframing the problem</h3>
                         </header>
                         <h4>1. Previous Design Evaluation</h4>
                         <a href="img/Kohls-Shop-My-Store/Omni-Channel-BOPUS.png" target="_blank">
@@ -96,14 +100,14 @@
                         <p>A summary chart for the compatitive analysis</p>
                         <img class="content-img" alt="Competitive Analysis" src="img/Kohls-Shop-My-Store/Competitive1.png">
                         <div class="img-caption">Compatitive Analysis Chart on Major Retailers BOPUS</div>
-                        <h4>Research Takeaway</h4>
+                        <h4>Strategic takeaway</h4>
                         <p>One key problem we found that affects BOPUS online shopping experience is <b>INVENTORY VISIBILITY</b> when searching for target items. It happens that merchadise could be in stock in some stores but out of stock in some other stores. Using the “Pick up in store” filter doesn’t assure the product is available at the store customer wants to go. The user either need to find another store to pick up, or give up the merchandise and choose another item.</p>
                         <img class="content-img" alt="Bad Experience" src="img/Kohls-Shop-My-Store/BadPractice.png">
                         <div class="img-caption">User experience when target item is not available at preferred store location</div>
                     </section>
                     <section>
                         <header>
-                            <h3 id='section3'>Insights</h3>
+                            <h3 id='section3'>The design journey: selected decisions</h3>
                         </header>
                         <p>Based on the research, some design opportunies were identified.</p>
                         <ul>
@@ -114,7 +118,7 @@
                     </section>
                     <section>
                         <header>
-                            <h3 id='section4'>Brainstorm</h3>
+                            <h3>Exploring the product model</h3>
                         </header>
                         <p>BOPUS awareness can be brought as early as when user searches target items. Either a BOPUS search query or BOPUS toggle can help user see the inventory in user's prefered store.</p>
                         <img class="content-img" alt="Brainstorm Design" src="img/Kohls-Shop-My-Store/brainstormDesktop.png">
@@ -122,13 +126,13 @@
                         <img class="content-img" alt="Brainstorm Design" src="img/Kohls-Shop-My-Store/brainstormMobile.png">
                         <div class="img-caption">BOPUS Intergrated Search Exploration on Mobile</div>
                         <p>Store Filters also provide users with the inventory visibility of nearby stores. It assures users what they see will be in stock in store and available for pickup on the same day. </p>
-                        <img class="content-img" alt="Brainstorm Design" src="img/Kohls-Shop-My-Store/brainstormFilter">
+                        <img class="content-img" alt="Early exploration of a preferred-store inventory filter on the search results page." src="img/Kohls-Shop-My-Store/brainstormFilter.png">
                         <div class="img-caption">BOPUS Store Filter on Search Result Page</div>
                         
                     </section>
                     <section>
                         <header>
-                            <h3 id='section5'>Constraints</h3>
+                            <h3>Making the strategy shippable</h3>
                         </header>
                         <p>There are many design variations and iterations around the concepts of integrated search and store filters. I did test with customers in store. Most feedback are positive. However, when it comes to a releasible design delivery, there are many constraints implementing the "ideal design". For example: </p>
                         <ul>
@@ -140,7 +144,7 @@
                     </section>
                     <section>
                         <header>
-                            <h3 id='section6'>Concept</h3>
+                            <h3 id='section6'>The solution</h3>
                         </header>
                         <p>We believe the Store Filter will help users find their BOPUS eligible products more easily omni-channel</p>
                         <h4>Desktop Web Store</h4>
@@ -165,13 +169,14 @@
                     </section>
                     <section>
                         <header>
-                            <h3 id='section7'>Improvement</h3>
+                            <h3 id='section7'>Impact &amp; reflection</h3>
                         </header>
                         <p>With store filters. new flow is more linear when user searches BOPUS eligible products.</p>
                         <img class="content-img" alt="Deliverable Tablet" src="img/Kohls-Shop-My-Store/NewFLow.png">
                         <div class="img-caption">New user flow</div>
                         
-                        <p>The store filter was realised shortly after I left the company. Mobile Shop-My-Store toggle was realised a bit later. There has been a great increase on BOPUS orders. BOPUS orders are now 15% of Kohl's total sales.</p>
+                        <p>The store filter shipped shortly after I left Kohl’s, followed later by the mobile Shop My Store toggle. BOPUS grew into a material part of Kohl’s business; use a sourceable, time-stamped metric here before publishing a specific attribution.</p>
+                        <p><strong>Leadership reflection:</strong> The work reinforced that omnichannel design needs a shared customer promise across surfaces. A strong pattern is not simply responsive UI—it preserves the same decision confidence wherever the customer starts.</p>
                     </section>
                     
                     

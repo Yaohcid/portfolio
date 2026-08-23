@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="projectstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <script src="jquery-3.2.1.min.js"></script>
 </head>
 <style>
@@ -96,10 +97,11 @@
             <div class="scrollspy" id="mySpy">
                 <nav>
                     <ul>
-                        <li> <a href='#section1'>Overview</a> </li>
+                        <li> <a href='#section1'>Summary</a> </li>
                         <li> <a href='#section2'>Challenge</a> </li>
-                        <li> <a href='#section3'>My Role</a> </li>
-                        <li> <a href='#section4'>Outcome</a> </li>
+                        <li> <a href='#section3'>Strategy</a> </li>
+                        <li> <a href='#section4'>Solution</a> </li>
+                        <li> <a href='#section5'>Impact</a> </li>
                     </ul>
                 </nav>
             </div>
@@ -113,43 +115,47 @@
              
                 <div class="projectTag">2020 - 2025 | Lead Product Designer | Web app | Enterprise </div>
                 <article>
-                    <section>
+                    <section class="executive-summary">
                         <header>
-                            <h3 id='section1'>Overview</h3> </header>
-                        <p>I designed the Single Agent View for End-User Monitoring, a dedicated troubleshooting experience for Tier 1 and Tier 2 IT helpdesk teams investigating an individual employee’s connection problem.</p>
-                        <p>The experience helps support teams understand what a specific endpoint agent is experiencing—from local network conditions to performance across applications—and identify where to investigate next.</p>
-                       
-                        
-                        
-                        
+                            <h3 id='section1'>Executive summary</h3> </header>
+                        <p>I designed the Single Agent View for End-User Monitoring: a dedicated troubleshooting experience for Tier 1 and Tier 2 IT teams investigating an individual employee’s connection problem.</p>
+                        <p>Instead of asking support teams to infer a person’s experience from aggregate test data, the experience creates an agent-level lens across local network conditions, application performance, and the next best place to investigate.</p>
                     </section>
                     <section class="ok">
                         <header>
-                            <h3 id='section2'>Challenge</h3> </header>
+                            <h3 id='section2'>The challenge</h3> </header>
                         <p>Existing scheduled tests provided an aggregated view of a group of endpoint agents testing a single application. This was useful for identifying broad issues, but it did not explain why one employee might be having a poor experience.</p>
                         <p>Each endpoint agent can have different local network conditions and different performance outcomes across applications. Helpdesk teams needed a way to move from a reported employee issue to relevant, agent-level network and application insights.</p>
-                        <img class="content-img" alt="Data Overwhelm" src="img/2-EUM/eum_challenge.png">
+                        <img class="content-img" alt="Aggregated monitoring data that makes an individual employee issue difficult to isolate." src="img/2-EUM/eum_challenge.png">
                     </section>
                     <section>
                         <header>
-                            <h3 id='section3'>My Role</h3> </header>
-                        <p>As the sole designer for the Single Agent View experience, I:</p>
+                            <h3 id='section3'>My role &amp; strategic contribution</h3> </header>
+                        <p>As the sole designer, I established the troubleshooting model and made it actionable across a range of customer maturity levels.</p>
                         <ul>
-                           <li>Defined the agent-level troubleshooting information architecture</li>
-                           <li>Designed the end-to-end Single Agent View and supporting interaction patterns</li>
-                           <li>Iterated on the design based on customer feedback, usability testing, and technical constraints</li>
-                           <li>Applied progressive disclosure to balance fast triage with in-depth diagnostics</li>
-                           <li>Presented concepts to customers and validated designs through customer testing</li>
-                           <li>Explored AI summaries for the troubleshooting workflow</li>
+                           <li>Defined the agent-level information architecture and end-to-end interaction model</li>
+                           <li>Applied progressive disclosure to support rapid triage and deeper diagnostics</li>
+                           <li>Validated concepts with customers, usability testing, and engineering constraints</li>
+                           <li>Explored how AI summaries could accelerate the troubleshooting workflow</li>
                        </ul>
                     </section>
                     <section>
                         <header>
-                            <h3 id='section4'>Outcome</h3> </header>
-                        <p>The Single Agent View creates a dedicated lens for investigating an individual employee’s digital experience. It helps helpdesk teams move beyond group-level test results to understand agent-specific network conditions, application performance, and potential causes of a reported connection issue.</p>
-                       <img class="content-img" alt="Single Agent View" src="img/2-EUM/end_user_monitoring.gif">
+                            <h3>Reframing the problem</h3> </header>
+                        <p>The design challenge was not “show more endpoint data.” It was to help a helpdesk professional construct a defensible explanation under pressure. I reframed the product around a troubleshooting sequence: <strong>identify the employee, assess their environment, connect signals across applications, and narrow the next investigation.</strong></p>
                     </section>
-                    
+                    <section><header><h3>The design journey</h3></header>
+                        <div class="decision-grid"><div><h4>Start with the person</h4><p>The agent became the organizing unit, so the investigation stayed anchored in the reported issue.</p></div><div><h4>Triage before detail</h4><p>High-signal summaries support first response; layered views preserve the evidence specialists need.</p></div><div><h4>Design for handoff</h4><p>Clear context helps teams move from a symptom to an informed escalation without reassembling the story.</p></div></div>
+                    </section>
+                    <section><header><h3 id='section4'>The solution</h3></header>
+                        <p>The Single Agent View brings agent-specific conditions and application performance into one investigation surface, helping support teams move from a reported connection issue to focused next steps.</p>
+                        <img class="content-img" alt="Single Agent View that brings individual endpoint conditions and application performance into a troubleshooting workflow." src="img/2-EUM/end_user_monitoring.gif">
+                    </section>
+                    <section><header><h3 id='section5'>Impact &amp; reflection</h3></header>
+                        <p>The experience established a dedicated agent-level troubleshooting workflow where teams previously had to work backward from aggregate results.</p>
+                        <p class="placeholder">Outcome metric placeholder: add customer task-success, reduction in time-to-triage, adoption, or qualitative validation evidence approved for public sharing.</p>
+                        <p><strong>Leadership reflection:</strong> Enterprise complexity becomes manageable when the interface reflects how work actually unfolds. My role was to make the investigation legible—not merely make all available telemetry visible.</p>
+                    </section>
 
                 </article>
             </div>

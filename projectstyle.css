@@ -64,6 +64,7 @@ nav ul li a.is-selected {
 body {
     font-family: "Inter", sans-serif;
     margin:0;
+    background: #fcfcfd;
 }
 
 article {
@@ -74,7 +75,8 @@ h1{
     font-family:'Inter', sans-serif;
     font-size: 46px;
     line-height: 56px;
-    font-weight: 400;
+    font-weight: 650;
+    letter-spacing: -1.4px;
     margin-bottom:20px;
 }
 
@@ -91,7 +93,8 @@ h3{
     font-family:'Inter', sans-serif;
     font-size: 24px;
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 650;
+    letter-spacing: -.25px;
 }
 
 h4{
@@ -109,6 +112,62 @@ h4{
     color: #969696;
     font-family: 'Inter', sans-serif;
 }
+
+.eyebrow {
+    color: #1967d2;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .09em;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.executive-summary {
+    margin: 0 0 72px;
+    padding: 36px 40px;
+    background: linear-gradient(135deg, #edf4ff 0%, #f7f3ff 52%, #fff9ed 100%);
+    border: 1px solid rgba(66, 133, 244, .14);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.executive-summary h3 {
+    color: #185abc;
+    margin: 0 0 16px;
+}
+
+.executive-summary p {
+    color: #30343a;
+    margin: 0 0 12px;
+}
+
+.executive-summary p:last-child { margin-bottom: 0; }
+
+.placeholder {
+    color: #5f6368;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 28px;
+    background: #fff8e7;
+    border-left: 3px solid #f6b73c;
+    padding: 14px 18px;
+}
+
+.decision-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.decision-grid > div {
+    background: #f4f7fb;
+    border-top: 3px solid #4285f4;
+    padding: 18px 20px;
+}
+
+.decision-grid h4 { margin: 0 0 8px; color: #202124; }
+.decision-grid p { font-size: 16px; line-height: 26px; margin: 0; }
 
 p{
     font-size: 18px;
@@ -145,6 +204,8 @@ section{
     position: relative;
     margin-bottom: 96px;
 }
+
+section > header + h3 { margin-top: 42px; }
 
 .banner-img{
     width:100%;
@@ -388,4 +449,13 @@ img {vertical-align: middle;}
         background: url(img/logo.png) no-repeat;
         background-size: contain;
     }
+}
+
+@media screen and (max-width: 680px) {
+    h1 { font-size: 36px; line-height: 44px; }
+    h2 { font-size: 20px; line-height: 28px; }
+    p, section li { font-size: 17px; line-height: 30px; }
+    .decision-grid { grid-template-columns: 1fr; }
+    .content { width: calc(100% - 40px); }
+    .executive-summary { margin-bottom: 52px; padding: 26px 24px; border-radius: 16px; }
 }

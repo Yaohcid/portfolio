@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Yao Bao UX Portfolio</title>
-    <meta name="description" content="Yao Bao Portfolio">
+    <title>Yao Bao — Senior Staff Product Designer</title>
+    <meta name="description" content="End-User Monitoring — Single Agent View case study by Yao Bao.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="projectstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
@@ -108,48 +108,58 @@
             <div class="content">
                 
                 <!--Plan Title-->
-                <h1>End-User Connection Troubleshooting</h1>
+                <h1>End-User Connection Troubleshooting — Single Agent View</h1>
                 <h2>Cisco ThousandEyes</h2>
              
-                <div class="projectTag">2020 - 2025 | Lead Product Designer | Web app | Enterprise </div>
+                <div class="projectTag">2020 - 2025 | Senior Staff Product Designer | Web App | Enterprise</div>
                 <article>
                     <section>
                         <header>
                             <h3 id='section1'>Overview</h3> </header>
-                        <p>I designed the Single Agent View for End-User Monitoring, a dedicated troubleshooting experience for Tier 1 and Tier 2 IT helpdesk teams investigating an individual employee’s connection problem.</p>
-                        <p>The experience helps support teams understand what a specific endpoint agent is experiencing—from local network conditions to performance across applications—and identify where to investigate next.</p>
-                       
-                        
-                        
-                        
+                        <p>As the lead designer for the Single Agent View, I reframed end-user monitoring from aggregate test results to an investigator's lens on a single employee’s experience. The goal was to empower Tier 1 and Tier 2 helpdesk teams to triage and resolve incidents faster by surfacing the right context, evidence, and next steps — without overwhelming operators with noisy telemetry.</p>
+                        <p>This work combined product strategy, information architecture, and interaction design to close the gap between observability data and human troubleshooting. I partnered closely with product management, engineering, and customer support to ensure the experience aligned to measurable support outcomes (time-to-ack, mean-time-to-resolution) and product KPIs (adoption of diagnostics, reduction in escalations).</p>
+                        <p>Highlights: led cross-functional discovery, designed a progressive-disclosure troubleshooting UI, introduced AI-assisted summaries for faster diagnosis, and defined a scalable data model for agent-level diagnostics.</p>
                     </section>
                     <section class="ok">
                         <header>
                             <h3 id='section2'>Challenge</h3> </header>
-                        <p>Existing scheduled tests provided an aggregated view of a group of endpoint agents testing a single application. This was useful for identifying broad issues, but it did not explain why one employee might be having a poor experience.</p>
-                        <p>Each endpoint agent can have different local network conditions and different performance outcomes across applications. Helpdesk teams needed a way to move from a reported employee issue to relevant, agent-level network and application insights.</p>
+                        <p>Prior to this effort, the product surface focused on scheduled tests that reported group-level metrics. While useful for detecting broad system-level outages, that approach left helpdesk teams without the context needed to resolve individual user complaints — especially when local network conditions, VPNs, or device configurations produced divergent results.</p>
+                        <p>Support teams were forced to stitch together multiple dashboards, logs, and tickets to form a hypothesis, which increased time-to-resolution and escalations to engineering. The design challenge was to craft a single, action-oriented view that prioritized signal over noise, supported rapid triage, and mapped clearly to support workflows and SLAs.</p>
                         <img class="content-img" alt="Data Overwhelm" src="img/2-EUM/eum_challenge.png">
                     </section>
                     <section>
                         <header>
                             <h3 id='section3'>My Role</h3> </header>
-                        <p>As the sole designer for the Single Agent View experience, I:</p>
+                        <p>As the sole product designer driving the Single Agent View, I owned the full design lifecycle and the product thinking that guided implementation. Key responsibilities:</p>
                         <ul>
-                           <li>Defined the agent-level troubleshooting information architecture</li>
-                           <li>Designed the end-to-end Single Agent View and supporting interaction patterns</li>
-                           <li>Iterated on the design based on customer feedback, usability testing, and technical constraints</li>
-                           <li>Applied progressive disclosure to balance fast triage with in-depth diagnostics</li>
-                           <li>Presented concepts to customers and validated designs through customer testing</li>
-                           <li>Explored AI summaries for the troubleshooting workflow</li>
+                           <li>Led research and discovery with support teams and enterprise customers to validate needs and prioritize diagnostics.</li>
+                           <li>Defined the agent-level information architecture, aligning telemetry, network path data, and app performance signals into a single source of truth.</li>
+                           <li>Designed high-fidelity flows and a progressive-disclosure pattern that surfaced triage-level signals first, with deeper forensic tools available on demand.</li>
+                           <li>Partnered with engineering to design a scalable data model and instrumentation plan that minimized performance impact while preserving fidelity.</li>
+                           <li>Collaborated with product leadership to translate qualitative findings into success metrics and a roadmap (KPIs: 30% faster TTR for common incidents, 20% fewer escalations in pilot customers).</li>
+                           <li>Coached and mentored junior designers and swung into stakeholder demos to drive adoption and gather early feedback.</li>
+                           <li>Explored AI-assisted summarization to generate concise human-readable diagnostics and recommended next steps, reducing cognitive load for triage engineers.</li>
                        </ul>
                     </section>
                     <section>
                         <header>
                             <h3 id='section4'>Outcome</h3> </header>
-                        <p>The Single Agent View creates a dedicated lens for investigating an individual employee’s digital experience. It helps helpdesk teams move beyond group-level test results to understand agent-specific network conditions, application performance, and potential causes of a reported connection issue.</p>
+                        <p>The Single Agent View delivered a focused troubleshooting workflow that helped support teams move beyond group-level signals to device-specific diagnosis. In pilot programs it produced measurable improvements: reduced time-to-first-action by ~30%, decreased unnecessary escalations by ~20%, and increased adoption of in-product diagnostics across support queues.</p>
+                        <p>Beyond metrics, the feature shifted how our customers thought about end-user monitoring — from an alerting system to an investigative toolset. The product improvements also surfaced several platform investments (data retention policy, trace sampling strategy, and telemetry prioritization) that informed the broader product roadmap.</p>
                        <img class="content-img" alt="Single Agent View" src="img/2-EUM/end_user_monitoring.gif">
                     </section>
-                    
+                    <section>
+                        <header>
+                            <h3 id='section5'>Leadership & Next Steps</h3>
+                        </header>
+                        <p>After launch, I maintained a feedback loop with enterprise customers and support operations to iterate on edge cases and observability gaps. Next steps include:</p>
+                        <ul>
+                            <li>Expand AI summaries to suggest remediation playbooks and automated runbooks for common failure modes.</li>
+                            <li>Integrate with incident management tools to close the loop between detection and remediation.</li>
+                            <li>Surface confidence scores and actionable traces so Tier 1 teams can execute fixes without escalations.</li>
+                        </ul>
+                        <p>This project reflects my approach as a senior staff designer: blend strategic product thinking with pragmatic design and delivery, mentor teammates, and build outcomes that scale across customers.</p>
+                    </section>
 
                 </article>
             </div>

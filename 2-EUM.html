@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="projectstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <script src="jquery-3.2.1.min.js"></script>
 </head>
 <style>
@@ -96,10 +97,10 @@
             <div class="scrollspy" id="mySpy">
                 <nav>
                     <ul>
-                        <li> <a href='#section1'>Overview</a> </li>
-                        <li> <a href='#section2'>Challenge</a> </li>
-                        <li> <a href='#section3'>My Role</a> </li>
-                        <li> <a href='#section4'>Outcome</a> </li>
+                        <li> <a href='#section1'>Challenge</a> </li>
+                        <li> <a href='#section2'>Roles &amp; Strategy</a> </li>
+                        <li> <a href='#section3'>Solution</a> </li>
+                        <li> <a href='#section4'>Outcomes</a> </li>
                     </ul>
                 </nav>
             </div>
@@ -113,43 +114,72 @@
              
                 <div class="projectTag">2020 - 2025 | Lead Product Designer | Web app | Enterprise </div>
                 <article>
-                    <section>
+                    <section class="executive-summary">
                         <header>
-                            <h3 id='section1'>Overview</h3> </header>
-                        <p>I designed the Single Agent View for End-User Monitoring, a dedicated troubleshooting experience for Tier 1 and Tier 2 IT helpdesk teams investigating an individual employee’s connection problem.</p>
-                        <p>The experience helps support teams understand what a specific endpoint agent is experiencing—from local network conditions to performance across applications—and identify where to investigate next.</p>
-                       
-                        
-                        
-                        
+                            <h3>Executive summary</h3> </header>
+                        <p>I designed the Single Agent View for End-User Monitoring: a dedicated troubleshooting experience for Tier 1 and Tier 2 IT teams investigating an individual employee’s connection problem.</p>
+                        <p>Instead of asking support teams to infer a person’s experience from aggregate test data, the experience creates an agent-level lens across local network conditions, application performance, and the next best place to investigate.</p>
                     </section>
                     <section class="ok">
                         <header>
-                            <h3 id='section2'>Challenge</h3> </header>
+                            <h3 id='section1'>The challenge</h3> </header>
+                        <p>In the shift to widespread remote work after the pandemic, IT teams were suddenly supporting employees across far more variable home-network conditions. Customer feedback made a consistent gap clear: Endpoint Agent lacked a dedicated lens for understanding one person’s experience.</p>
                         <p>Existing scheduled tests provided an aggregated view of a group of endpoint agents testing a single application. This was useful for identifying broad issues, but it did not explain why one employee might be having a poor experience.</p>
                         <p>Each endpoint agent can have different local network conditions and different performance outcomes across applications. Helpdesk teams needed a way to move from a reported employee issue to relevant, agent-level network and application insights.</p>
-                        <img class="content-img" alt="Data Overwhelm" src="img/2-EUM/eum_challenge.png">
+                        <a href="img/2-EUM/eum_challenge.png" target="_blank" rel="noopener"><img class="content-img" alt="Aggregated monitoring data that makes an individual employee issue difficult to isolate." src="img/2-EUM/eum_challenge.png"></a>
                     </section>
-                    <section>
+                    <section class="role-strategy">
                         <header>
-                            <h3 id='section3'>My Role</h3> </header>
-                        <p>As the sole designer for the Single Agent View experience, I:</p>
+                            <h3 id='section2'>Role &amp; strategy</h3> </header>
+                        <h4 class="strategy-subheading">My role</h4>
+                        <p>I led the design initiative for the Single Agent View. I convened a cross-functional workshop with customer success, product management, and internal partners to align on how Endpoint Agent Overview needed to evolve, then established the troubleshooting model and made it actionable across a range of customer maturity levels.</p>
                         <ul>
-                           <li>Defined the agent-level troubleshooting information architecture</li>
-                           <li>Designed the end-to-end Single Agent View and supporting interaction patterns</li>
-                           <li>Iterated on the design based on customer feedback, usability testing, and technical constraints</li>
-                           <li>Applied progressive disclosure to balance fast triage with in-depth diagnostics</li>
-                           <li>Presented concepts to customers and validated designs through customer testing</li>
-                           <li>Explored AI summaries for the troubleshooting workflow</li>
+                           <li>Defined the agent-level information architecture and end-to-end interaction model</li>
+                           <li>Applied progressive disclosure to support rapid triage and deeper diagnostics</li>
+                           <li>Validated concepts with customers, usability testing, and engineering constraints</li>
+                           <li>Explored how AI summaries could accelerate the troubleshooting workflow</li>
                        </ul>
                     </section>
-                    <section>
+                    <section class="strategy-detail">
                         <header>
-                            <h3 id='section4'>Outcome</h3> </header>
-                        <p>The Single Agent View creates a dedicated lens for investigating an individual employee’s digital experience. It helps helpdesk teams move beyond group-level test results to understand agent-specific network conditions, application performance, and potential causes of a reported connection issue.</p>
-                       <img class="content-img" alt="Single Agent View" src="img/2-EUM/end_user_monitoring.gif">
+                            <h4 class="strategy-subheading">The strategic bet</h4> </header>
+                        <p>Rather than extend an aggregate overview with more telemetry, I made the strategic call to establish a dedicated single-agent lens. The design challenge was not “show more endpoint data.” It was to help a helpdesk professional construct a defensible explanation under pressure: <strong>identify the employee, assess their environment, connect signals across applications, and narrow the next investigation.</strong></p>
+                        <div class="workflow-diagram eum-flow" role="img" aria-label="End-user troubleshooting flow: start with an employee report, inspect their endpoint conditions, connect application and network signals, and make a focused escalation.">
+                            <div class="flow-intro"><span>Troubleshooting model</span><strong>Turn an employee report into an informed next step</strong></div>
+                            <div class="flow-track">
+                                <div class="flow-card"><span class="flow-number">01</span><h4>Reported issue</h4><p>Start with the employee and their symptom.</p></div>
+                                <div class="flow-card"><span class="flow-number">02</span><h4>Local context</h4><p>Assess the agent’s network and endpoint conditions.</p></div>
+                                <div class="flow-card"><span class="flow-number">03</span><h4>Connected signals</h4><p>Compare experience across relevant applications.</p></div>
+                                <div class="flow-card flow-card-accent"><span class="flow-number">04</span><h4>Focused action</h4><p>Escalate with evidence, not a vague symptom.</p></div>
+                            </div>
+                        </div>
                     </section>
-                    
+                    <section class="strategy-detail strategy-detail-last"><header><h4 class="strategy-subheading">Selected decisions</h4></header>
+                        <p>Over four major iterations, the question stayed consistent: how do we surface the signal that matters without losing the diagnostic evidence a technician needs? Each release addressed the limit of the previous model.</p>
+                        <div class="evolution-grid">
+                            <div class="evolution-card"><span>01 · Foundation</span><h4>Stacked metric swimlanes</h4><p>Established a single-agent view, but required too much scanning to understand whether something was wrong.</p></div>
+                            <div class="evolution-card"><span>02 · Locate</span><h4>Aggregated line charts</h4><p>Created room for segment visualizations—critical for identifying which network segment contained the problem.</p></div>
+                            <div class="evolution-card"><span>03 · Connect</span><h4>Time-based heatmaps</h4><p>Added horizontal issue signaling across time, linking a meaningful timestamp to the metrics worth investigating.</p></div>
+                            <div class="evolution-card evolution-card-accent"><span>04 · Scale</span><h4>Progressive disclosure</h4><p>Reduced noise when customers monitored dozens of applications: surface the issue first, then reveal the relevant time and metrics.</p></div>
+                        </div>
+                        <div class="future-note">
+                            <h4>Looking ahead: AI-assisted triage</h4>
+                            <p>I also explored an AI summary concept to help technicians orient to a complex issue more quickly. This was an exploratory direction and is not represented in the shipped mock.</p>
+                        </div>
+                    </section>
+                    <section><header><h3 id='section3'>The solution</h3></header>
+                        <p>The Single Agent View brings agent-specific conditions and application performance into one investigation surface, helping support teams move from a reported connection issue to focused next steps.</p>
+                        <a href="img/2-EUM/end_user_monitoring.gif" target="_blank" rel="noopener"><img class="content-img" alt="Single Agent View that brings individual endpoint conditions and application performance into a troubleshooting workflow." src="img/2-EUM/end_user_monitoring.gif"></a>
+                    </section>
+                    <section><header><h3 id='section4'>Outcomes &amp; reflection</h3></header>
+                        <p>The experience established a dedicated agent-level troubleshooting workflow where teams previously had to work backward from aggregate results.</p>
+                        <div class="outcome-stats" aria-label="Single Agent View usage over the past year">
+                            <div><strong>40k+</strong><span>page views per week for the past year*</span></div>
+                            <div><strong>58k</strong><span>peak weekly page views</span></div>
+                            <p>*Excludes seasonal holiday periods.</p>
+                        </div>
+                        <p><strong>Leadership reflection:</strong> The heatmap tested well when the mockup showed only a few applications, but that scenario did not represent the scale of a real customer environment—where an organization might monitor as many as 50 apps. I learned to validate information density and scanability at realistic scale, not just the interaction model in isolation. That lesson led directly to progressive disclosure: show the issue signal first, then reveal the time and metrics needed to investigate it.</p>
+                    </section>
 
                 </article>
             </div>

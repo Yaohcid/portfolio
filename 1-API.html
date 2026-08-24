@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="projectstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <script src="jquery-3.2.1.min.js"></script>
 </head>
 <style>
@@ -96,9 +97,10 @@
             <div class="scrollspy" id="mySpy">
                 <nav>
                     <ul>
-                        <li> <a href='#section1'>Overview</a> </li>
-                        <li> <a href='#section2'>My Role</a> </li>
-                        <li> <a href='#section3'>Outcome</a> </li>
+                        <li> <a href='#section1'>Challenge</a> </li>
+                        <li> <a href='#section2'>Roles &amp; Strategy</a> </li>
+                        <li> <a href='#section3'>Solution</a> </li>
+                        <li> <a href='#section4'>Outcomes</a> </li>
                     </ul>
                 </nav>
             </div>
@@ -111,35 +113,81 @@
                 <h2>Cisco ThousandEyes</h2>
                 <div class="projectTag">2024 | Lead Product Designer | Web app | Enterprise </div>
                 <article>
-                    <section>
+                    <section class="executive-summary">
                         <header>
-                            <h3 id='section1'>Overview</h3> </header>
-                        <p>I designed ThousandEyes’ first dedicated API testing experience, enabling users to continuously test API availability and performance from distributed network locations - beyond on-demand validation in tools like Postman.</p>
-                        <p>The work established a phased foundation: launch with single-step API tests, then scale the configuration model and results views to support multi-step API workflows.</p>
-                        
-                        
-                        
+                            <h3>Executive summary</h3> </header>
+                        <p>I designed ThousandEyes’ first dedicated API testing experience: a way for enterprise teams to continuously test API availability and performance from distributed network locations—beyond one-off validation in tools like Postman.</p>
+                        <p>The strategic contribution was a phased product foundation. We made single-step testing useful at launch while deliberately establishing a configuration and results model that could grow into multi-step workflows without a disruptive redesign.</p>
                     </section>
                     <section class="ok">
                         <header>
-                            <h3 id='section2'>My Role</h3> </header>
-                        <p>As the sole designer for the API testing experience, I:</p>    
+                            <h3 id='section1'>The challenge</h3> </header>
+                        <p>API monitoring lives at the intersection of developer flexibility and enterprise operational confidence. Users needed to express complex requests—methods, credentials, headers, bodies, and assertions—without turning test setup into a wall of technical fields or hiding the details required to diagnose a failure.</p>
+                        <p>The harder product question was temporal: how could the experience serve a simple request today while making a sequence of dependent API calls feel like a natural extension tomorrow?</p>
+                    </section>
+                    <section class="role-strategy">
+                        <header><h3 id='section2'>Role &amp; strategy</h3></header>
+                        <h4 class="strategy-subheading">My role</h4>
+                        <p>As the sole designer, I owned the end-to-end experience and aligned the customer workflow with the platform’s execution model.</p>
                         <ul>
-                            <li>Defined the configuration flow and information architecture</li>
-                            <li>Designed single-step API test setup and a scalable path to multi-step tests</li>
-                            <li>Created API-specific inputs: method, endpoint, headers, authentication, body, and assertions</li>
-                            <li>Designed results views for API performance, availability, and failure investigation</li>
-                            <li>Presented concepts to customers and validated designs through customer testing</li>
-                            <li>Partnered with engineering to align the experience with the execution model</li>
+                            <li>Defined the configuration information architecture and progressive disclosure model</li>
+                            <li>Designed the single-step launch and the scalable multi-step configuration pattern</li>
+                            <li>Created the results experience for performance, availability, and failure investigation</li>
+                            <li>Validated concepts with customers and partnered with engineering on feasible execution</li>
                         </ul>
                     </section>
-                    <section>
+                    <section class="strategy-detail">
                         <header>
-                            <h3 id='section3'>Outcome</h3> </header>
-                        <p>Multi-Step API Configuration</p>
-                        <img class="content-img" alt="API Configuration" src="img/1-API/api_configurations.gif">
-                        <p>API Test Results</p>
-                        <img class="content-img" alt="API Configuration" src="img/1-API/api_test_views.gif">
+                            <h4 class="strategy-subheading">The strategic bet</h4> </header>
+                        <p>Rather than treating this as a form-design problem, I framed it as a confidence-building workflow: <strong>define intent, make the request inspectable, then make its behavior explainable.</strong> That framing connected configuration and diagnosis into one coherent product surface.</p>
+                        <div class="workflow-diagram api-flow" role="img" aria-label="API monitoring flow: define the request, run it from distributed locations, inspect the outcome, and investigate the failure signal.">
+                            <div class="flow-intro"><span>Experience model</span><strong>From request intent to operational confidence</strong></div>
+                            <div class="flow-track">
+                                <div class="flow-card"><span class="flow-number">01</span><h4>Define</h4><p>Method, endpoint, authentication, and assertions.</p></div>
+                                <div class="flow-card"><span class="flow-number">02</span><h4>Run</h4><p>Continuously test from distributed locations.</p></div>
+                                <div class="flow-card"><span class="flow-number">03</span><h4>Inspect</h4><p>See availability, timing, and response signals.</p></div>
+                                <div class="flow-card flow-card-accent"><span class="flow-number">04</span><h4>Investigate</h4><p>Use the failure context to choose the next action.</p></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="strategy-detail strategy-detail-last">
+                        <header><h4 class="strategy-subheading">Selected decisions</h4></header>
+                        <div class="decision-grid">
+                            <div><h4>Structure before fields</h4><p>Grouped inputs around the way practitioners think about a request, then revealed advanced controls only when needed.</p></div>
+                            <div><h4>Scalable by design</h4><p>Established a repeatable step pattern instead of creating a single-purpose form that would block multi-step testing.</p></div>
+                            <div><h4>Results with an investigative job</h4><p>Designed outputs to answer both “is it healthy?” and “where should I look next?”</p></div>
+                        </div>
+                        <h4 class="strategy-subheading capability-title">A phased capability path</h4>
+                        <p>I intentionally treated the first release as a foundation, not the finished experience: establish a dependable single-step test first, then extend the model as customer needs and platform capability matured.</p>
+                        <div class="capability-roadmap" role="img" aria-label="API testing capability path from a single-step basic-auth test through stronger credentials and OAuth 2.0 to multi-step workflows with step-associated variables.">
+                            <div><span>01 · Launch</span><strong>Single-step testing</strong><p>Basic username-and-password authentication.</p></div>
+                            <div><span>02 · Strengthen</span><strong>More secure credentials</strong><p>Quick syntax support for credential setup.</p></div>
+                            <div><span>03 · Expand</span><strong>Authentication breadth</strong><p>Additional methods, including OAuth 2.0.</p></div>
+                            <div><span>04 · Compose</span><strong>Multi-step workflows</strong><p>Post-request options and step-associated variables to chain API calls.</p></div>
+                        </div>
+                        <div class="constraint-note">
+                            <h4>Designing within a validation constraint</h4>
+                            <p>I explored immediate, one-off execution so people could validate each API step before deployment. The platform could not support that live model at the time, so the experience relies on an instant test to run a pilot; results may take about a minute. Making that constraint clear helped us focus on an experience that was useful and technically feasible.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <header><h3 id='section3'>The solution</h3></header>
+                        <p>The resulting experience pairs a composable multi-step configuration model with API-specific results views. Teams can define requests precisely, monitor behavior continuously, and investigate failures in context.</p>
+                        <a href="img/1-API/api_configurations.gif" target="_blank" rel="noopener"><img class="content-img" alt="Multi-step API test configuration showing a reusable, sequential request model." src="img/1-API/api_configurations.gif"></a>
+                        <p class="img-caption">Configuration designed to grow from a single request to a multi-step workflow.</p>
+                        <a href="img/1-API/api_cred_var.gif" target="_blank" rel="noopener"><img class="content-img" alt="OAuth 2.0 authentication setup for an API test, showing a generated access token saved as a reusable variable for the next API step." src="img/1-API/api_cred_var.gif"></a>
+                        <p class="img-caption">Credentials and step-associated variables make secure multi-step workflows reusable and easier to configure.</p>
+                        <a href="img/1-API/api_test_views.gif" target="_blank" rel="noopener"><img class="content-img" alt="API test results view for assessing availability, performance, and failure signals." src="img/1-API/api_test_views.gif"></a>
+                    </section>
+                    <section>
+                        <header><h3 id='section4'>Outcomes &amp; reflection</h3></header>
+                        <p>The work gave ThousandEyes a dedicated API testing foundation and created a clear path from initial launch scope to richer workflow coverage.</p>
+                        <div class="outcome-stats" aria-label="API testing adoption since February 2024 launch">
+                            <div><strong>180+</strong><span>organizations using API testing</span></div>
+                            <div><strong>1,700+</strong><span>unique tests created</span></div>
+                            <p>Since launch in February 2024</p>
+                        </div>
+                        <p><strong>Leadership reflection:</strong> I learned to make the future architecture visible in the present experience. A phased release is not a smaller version of the final product; it needs an intentional model that preserves customer trust as capability expands.</p>
                     </section>
                     
                 </article>

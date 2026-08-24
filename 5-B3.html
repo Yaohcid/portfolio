@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="projectstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel='icon' href="img/favicon.ico" type='image/x-icon'/>
     <script src="jquery-3.2.1.min.js"></script>
 </head>
@@ -36,13 +37,10 @@
             <div class="scrollspy" id="mySpy">
                 <nav>
                     <ul>
-                        <li> <a href='#section1'>Goal</a> </li>
-                        <li> <a href='#section2'>Pain Points</a> </li>
-                        <li> <a href='#section3'>Blueprint</a> </li>
-                        <li> <a href='#section4'>Brainstorm</a> </li>
-                        <li> <a href='#section5'>Insights</a> </li>
-                        <li> <a href='#section6'>Concepts</a> </li>
-                        <li> <a href='#section7'>B3 Proposal</a> </li>
+                        <li> <a href='#section1'>Challenge</a> </li>
+                        <li> <a href='#section2'>Roles &amp; Strategy</a> </li>
+                        <li> <a href='#section3'>Solution</a> </li>
+                        <li> <a href='#section4'>Outcomes</a> </li>
                     </ul>
                 </nav>
             </div>
@@ -52,24 +50,30 @@
                 
                 <!--Plan Title-->
                 <h1>B3: Building Better BOPUS</h1>
-                <h2>An easier, faster and more engaged "Buy Online Pick Up in Store" experience</h2>
+                <h2>Kohl's Department Stores</h2>
                 <div class="projectTag">Feburary 2016 - May 2016 | Experience Designer | Omni-Channel</div>
-                <p>Buy Online Pick Up in Store (BOPUS), is an shopping experience happening in both digital and physical world. Our OpinionLab screen kept displaying real-time customer feedbacks about BOPUS, among which we saw many negative ones. Some of them were about inventory visibility when shopping online, some of them were about customer having to wait in store to pick up, some of them were about merchandise not ready at the customer service desk when customer arrived... BOPUS at Kohl's is definitely not yet perfect. But the customer experience team has been trying its best to make it better.</p>                
+                <div class="executive-summary">
+                    <h3>Executive summary</h3>
+                    <p>I helped reframe Kohl’s BOPUS experience as an end-to-end service, not a checkout feature. By connecting customer feedback with store operations, we identified a portfolio of interventions—from proactive check-in to a dedicated pickup area—that could reduce friction across the digital-to-physical journey.</p>
+                </div>
                 <article>
-                    <section>
+                    <section class="role-strategy">
                         <header>
-                            <h3 id='section1'>Goal</h3>
+                            <h3 id='section1'>The challenge</h3>
                         </header>
-                        <p>Our goal was to provide our customers with an easier, faster and more engaged "Buy Online Pick Up in Store" experience. That includes both better online shopping experience,  better store pick up experience, and more.</p>
+                        <p>Customers judged one promise—fast, convenient pickup—across several disconnected systems: local inventory, order preparation, in-store queueing, and handoff. A better screen alone could not fix an experience that broke down in the store.</p>
+                        <h3 id='section2' class="section-heading">Role &amp; strategy</h3>
+                        <h4 class="strategy-subheading">My role</h4>
+                        <p>I partnered with the customer experience and store operations teams to make the end-to-end service visible, align on the highest-friction moments, and translate those moments into a staged experience strategy.</p>
                         
                     </section>
-                    <section>
+                    <section class="strategy-detail">
                         <header>
-                            <h3 id='section2'>Pain Points</h3>
+                            <h4 class="strategy-subheading">Evidence behind the strategy</h4>
                         </header>
                         <p>Why are the customers giving us negative feedbacks? What are they complaining? From what perspectives can we help making the BOPUS experience better?</p>
                         <p>To understand customers' mental modal, We pulled out the verbs from customer feedbacks and interviews then laid them out chronologically. </p>
-                        <a href="img/Kohls-B3/MentalModal.png" target="_blank"><img class="content-img" alt="Use Mental Modal" src="img/Kohls-B3/MentalModal.png"></a>
+                        <a href="img/Kohls-B3/MentalModal.png" target="_blank" rel="noopener"><img class="content-img" alt="Use Mental Modal" src="img/Kohls-B3/MentalModal.png"></a>
                         <div class="img-caption">Customer Mental Modal</div>
                         <p>Customer feedback:</p>
                         <div class="quote">
@@ -86,14 +90,14 @@
                         </ul>
                         <p>Having to wait in line for a long time is the most complained problem.</p>
                     </section>
-                    <section>
+                    <section class="strategy-detail">
                         <header>
-                            <h3 id='section3'>Blueprint</h3>
+                            <h4 class="strategy-subheading">The strategic bet: design the service, not the screen</h4>
                         </header>
                         <p>What is happening during the entire BOPUS process? What did we do to make our customers complain? To answer that, I put out a service design blueprint and validate it with Kohl's store operation team.</p>
-                        <img class="content-img" alt="Service Design Blueprint Draft" src="img/Kohls-B3/BlueprintDraft.png">
+                        <a href="img/Kohls-B3/BlueprintDraft.png" target="_blank" rel="noopener"><img class="content-img" alt="Service Design Blueprint Draft" src="img/Kohls-B3/BlueprintDraft.png"></a>
                         <div class="img-caption">BOPUS Service Design Blueprint Draft</div>
-                        <a href="img/Kohls-B3/BOPUS-blueprint.png" target="_blank">
+                        <a href="img/Kohls-B3/BOPUS-blueprint.png" target="_blank" rel="noopener">
                         <img class="content-img" alt="Service Design Blueprint" src="img/Kohls-B3/BOPUS-blueprint.png">
                         </a>
                         <div class="img-caption">BOPUS Service Design Blueprint</div>
@@ -103,23 +107,23 @@
                         <p>Upon receiving the order, we gave customers a 7-day pickup window. If the order is not picked up in 7 days, the merchandise will be brought back to shelf and the order is treated as cancelled. The store associates don't know on which day would the customer come, so they don't know how to prioritize the pick up products.</p>
                         <p>The store associate needs to scan customer's ready-for-pickup email barcode, scan every item's barcode, check customer ID, get customer's signature, etc. to get the pickup process done. The ready-for-pickup email is long and takes time to find the barcode.</p>
                     </section>
-                    <section>
+                    <section class="strategy-detail">
                         <header>
-                            <h3 id='section4'>Brainstorm</h3>
+                            <h4 class="strategy-subheading">Co-creating operationally viable ideas</h4>
                         </header>
                         <p>We partered with Kohl's store operation team and conductd a participatory design workshop to brainstorm solutions to make BOPUS experience faster and easier. We specifically focused on line busting ideas to reduce customer's wait time.</p>
-                        <a href="img/Kohls-B3/BOPUSBrainstorm.png" target="_blank">
+                        <a href="img/Kohls-B3/BOPUSBrainstorm.png" target="_blank" rel="noopener">
                             <img class="content-img" alt="BOPUS Brainstorm" src="img/Kohls-B3/BOPUSBrainstorm.png">
                         </a>
                         <div class="img-caption">BOPUS Brainstorm</div>
                         <p>Waiting in line is a universal problem for many other domains. Besides the workshop I also made a mood board, trying to find connections on the similar problem between different scenarios to get inspirations.</p>
-                        <img class="content-img" alt="BOPUS Mood Board" src="img/Kohls-B3/Moodboard.png">
+                        <a href="img/Kohls-B3/Moodboard.png" target="_blank" rel="noopener"><img class="content-img" alt="BOPUS Mood Board" src="img/Kohls-B3/Moodboard.png"></a>
                         <div class="img-caption">BOPUS Line Busting Mood Board (Images were got from Internet)</div>
                         
                     </section>
-                    <section>
+                    <section class="strategy-detail strategy-detail-last">
                         <header>
-                            <h3 id='section5'>Insights</h3>
+                            <h4 class="strategy-subheading">Selected strategic decisions</h4>
                         </header>
                         <p>Short term improvement needs to be implemented soon. Dedicated BOPUS area in store is needed for customers to pick up their orders. It would be more efficient if the store associates know the reasons that customers come to customer service desk.</p>
                         <p>Long term strategy needs to be considered and planned. We need to improve internal order-preparing process, train our store associates to make preparing window much shorter. Better service can be provided with the help with new technology</p>
@@ -127,39 +131,40 @@
                     </section>
                     <section>
                         <header>
-                            <h3 id='section6'>Concepts</h3>
+                            <h3 id='section3'>The solution: a staged BOPUS service model</h3>
                         </header>
                         <h4>Concept 1 - Customer Self Check-in</h4>
                         <p>Inspired by flight check-in process, why can't our customer check in on their phone  to let store associates know that they are on their way to pick up their orders? Similar to board ing pass, attached with the ready-for-pickup email or text message, a pickup pass would be much easier for customers to find.</p>
-                        <img class="content-img" alt="Text Chceckin" src="img/Kohls-B3/TextOMW.png">
+                        <a href="img/Kohls-B3/TextOMW.png" target="_blank" rel="noopener"><img class="content-img" alt="Text Chceckin" src="img/Kohls-B3/TextOMW.png"></a>
                         <div class="img-caption">Customer Text Back "OMW" to check in</div>
                         <p>Customers can click on a button on their ready-for-pickup email to let store associates know that they are on their way.</p>
-                        <img class="content-img" alt="Email Checkin" src="img/Kohls-B3/EmailAndPass.png">
+                        <a href="img/Kohls-B3/EmailAndPass.png" target="_blank" rel="noopener"><img class="content-img" alt="Email Checkin" src="img/Kohls-B3/EmailAndPass.png"></a>
                         <div class="img-caption">Ready-for-Pickup Email and Kohl's Pickup Pass</div>
                         <p>Even faster, if users have Kohl's app installed on their mobile phones, simply check in on the notification.</p>
-                        <img class="content-img" alt="NativeApp Checkin" src="img/Kohls-B3/NativeAppCheckin.png">
+                        <a href="img/Kohls-B3/NativeAppCheckin.png" target="_blank" rel="noopener"><img class="content-img" alt="NativeApp Checkin" src="img/Kohls-B3/NativeAppCheckin.png"></a>
                         <div class="img-caption">Kohl's App Notification Check in</div>
                         <h4>Concept 2 - Dedicated Pickup Area in Store</h4>
                         <p>After see our customers feedbacks and competitive analysis with other retailers, we decided to propose a dedicated area for pickup customers, as we are confident in the increasing use of BOPUS as a shopping approach.</p>\
-                        <img class="content-img" alt="BOPUS Area concept" src="img/Kohls-B3/PickupArea.png">
+                        <a href="img/Kohls-B3/PickupArea.png" target="_blank" rel="noopener"><img class="content-img" alt="BOPUS Area concept" src="img/Kohls-B3/PickupArea.png"></a>
                         <div class="img-caption">Kohl's Pickup Area in Store Concept</div>
-                        <img class="content-img" alt="BOPUS Area in store" src="img/Kohls-B3/pickup-signage.png">
+                        <a href="img/Kohls-B3/pickup-signage.png" target="_blank" rel="noopener"><img class="content-img" alt="BOPUS Area in store" src="img/Kohls-B3/pickup-signage.png"></a>
                         <div class="img-caption">Kohl's Pickup Area in Store Conceptual Effect</div>
                         <p>With customer initiated check-in and dedicated pickup area, it will take much less time for customers to complete their pickup process.</p>
-                        <img class="content-img" alt="BOPUS New Experience" src="img/Kohls-B3/NewExperience.png">
+                        <a href="img/Kohls-B3/NewExperience.png" target="_blank" rel="noopener"><img class="content-img" alt="BOPUS New Experience" src="img/Kohls-B3/NewExperience.png"></a>
                         <div class="img-caption">Kohl's Customer Initiated Pickup Experience</div>
                         <h4> Concept 3 - Kiosk Pickup</h4>
                         <p>There are usually 4 kiosks in each Kohl's stores, which have barcode scan capability. If there is a long line in front of customer service, customer can choose to scan their pick up pass at a kiosk, store associate will bring the merchandise to the customer.</p>
-                        <img class="content-img" alt="BOPUS Kiosk Pickup" src="img/Kohls-B3/KioskCheckin.png">
+                        <a href="img/Kohls-B3/KioskCheckin.png" target="_blank" rel="noopener"><img class="content-img" alt="BOPUS Kiosk Pickup" src="img/Kohls-B3/KioskCheckin.png"></a>
                         <div class="img-caption">Kohl's Kiosk Check-in Pickup (Thanks to my lovely co-worker Maria as the model)</div>
                     </section>
                     
                     <section>
                         <header>
-                            <h3 id='section7'>B3 Proposal</h3>
+                            <h3 id='section4'>Outcomes &amp; reflection</h3>
                         </header>
-                        <p>We've done so much more than the concepts above. Here is a consolidated document of some selected concepts we explored. Please take a look at it. For more details, feel free to chat with me in person.</p>
-                        <a href="img/Kohls-B3/B3.pdf" target="_blank">
+                        <p>The proposal consolidated selected concepts for a faster, more predictable pickup experience. Some ideas informed near-term operational improvements; others created a longer-term direction for the service.</p>
+                        <p><strong>Leadership reflection:</strong> Service blueprints create alignment because they show where customer pain and operational reality meet. The most valuable design work here was bringing the right partners into the same problem—not producing more screens.</p>
+                        <a href="img/Kohls-B3/B3.pdf" target="_blank" rel="noopener">
                             <img class="content-img-shadow" alt="BOPUS Doc Cover" src="img/Kohls-B3/B3DocCover.png">
                             <div class="img-caption">B3.pdf</div>
                         </a>
